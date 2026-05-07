@@ -67,7 +67,7 @@ Specialisation: Dynamics of Machinery, Thermal Machines, Turbo Machines, FEA, Me
 
 ## Background
 
-Long-format sim racing on the Nordschleife is where the telemetry behind the lap simulator comes from. It's a hobby, not a CV bullet — but it's the source of the data the rest of the work is calibrated against.
+Sim racing is one of the hobbies I use to explore vehicle dynamics, race strategy, telemetry analysis, and car setup optimization in a practical way. It has become a strong technical learning tool alongside my engineering projects, especially in simulation, data analysis, and performance-focused vehicle development.
 
 ---
 
