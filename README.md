@@ -1,4 +1,4 @@
-# Jaykumar Patil
+<img src="assets/header.svg" alt="Jaykumar Patil, vehicle dynamics and simulation engineer, with an animated Nürburgring lap" width="100%">
 
 **Vehicle Dynamics & Simulation Engineer** · M.Sc. Interdisciplinary Engineering (Automotive), Hochschule Trier · Trier, Germany
 
