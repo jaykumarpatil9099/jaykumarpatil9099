@@ -1,78 +1,66 @@
 # Jaykumar Patil
 
-**Vehicle Dynamics & Simulation Engineer** — M.Sc. Vehicle Engineering, Hochschule Trier, Germany.
+**Vehicle Dynamics & Simulation Engineer** · M.Sc. Interdisciplinary Engineering (Automotive), Hochschule Trier · Trier, Germany
 
-I build and validate vehicle simulation tools — most of what I publish here is MATLAB / Simulink modelling work calibrated against telemetry. Currently focused on the gap between quasi-steady-state lap simulators and full multi-body vehicle dynamics, and on the tooling around them (telemetry parsers, calibration sweeps, sector-level correlation).
+I build and validate vehicle simulation tools: lap-time simulators, multi-DoF vehicle models and tyre models, correlated against telemetry. My current focus is hybrid powertrains. My Master's thesis covers modelling, energy management and component sizing for a hydrogen-fuelled rotary range extender in a series-hybrid EV.
 
-**[CV (PDF)](cv/CV.pdf)** · **[LinkedIn](https://www.linkedin.com/in/jaykumar-patil)** · jaykumarpatil9099@gmail.com · Trier, Germany
+**Open to full-time roles in Germany from March 2027**: vehicle dynamics, simulation, race engineering, hybrid/EV powertrain.
+
+[![CV](https://img.shields.io/badge/CV-PDF-red)](cv/CV.pdf)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-jaykumar--patil-0A66C2?logo=linkedin)](https://www.linkedin.com/in/jaykumar-patil)
+[![Email](https://img.shields.io/badge/Email-jaykumarpatil9099%40gmail.com-grey?logo=gmail)](mailto:jaykumarpatil9099@gmail.com)
 
 ---
 
 ## Featured projects
 
-**[GT3 Lap Time Simulator](https://github.com/jaykumarpatil9099/gt3-lap-time-simulator)** · [live page](https://jaykumarpatil9099.github.io/gt3-lap-time-simulator/)
-Calibrated quasi-steady-state lap-time simulator for the Mercedes-AMG GT3 at the Nürburgring 24h. Five-stage fidelity ladder, charter PASS at +0.04 % vs reference (8:11.521 vs 8:11.341). Pure-MATLAB iRacing `.ibt` parser, 5×5 sector-RMS calibration sweep, sensitivity tornado.
+| Project | What it is | Stack |
+|---|---|---|
+| **[GT3 Lap Time Simulator](https://github.com/jaykumarpatil9099/gt3-lap-time-simulator)** · [live page](https://jaykumarpatil9099.github.io/gt3-lap-time-simulator/) | Quasi-steady-state lap simulator for the Mercedes-AMG GT3 at the Nürburgring 24h, calibrated against iRacing telemetry. Fidelity ladder from point mass up to Pacejka MF 5.2 with combined slip; calibrated v05 hits **+0.04 %** vs the reference lap. Pure-MATLAB `.ibt` parser, sector-RMS calibration sweep, sensitivity tornado. A charter regression test in CI keeps the lap within ±1 %. | MATLAB · CI |
+| **[Vehicle Dynamics Models](https://github.com/jaykumarpatil9099/vehicle-dynamics-models-matlab-simulink)** | Simulink toolkit from quarter-car to 14-DoF full vehicle, plus bicycle, longitudinal drive/brake and a Pacejka library. Every model is smoke-tested in CI. | Simulink · CI |
+| **[14-DoF Full-Vehicle Model](https://github.com/jaykumarpatil9099/vd-14dof-full-vehicle-matlab-simulink)** | Standalone 14-DoF ride + handling model: body, unsprung masses, wheel spin, 8-speed drivetrain, brakes, ARBs and per-axle Pacejka tyres. Frequency-domain results within ~2 % of hand calculations. | Simulink · CI |
+| **[Pacejka Magic Formula](https://github.com/jaykumarpatil9099/pacejka-tyre-model)** | Load-sensitive Magic Formula tyre model in **MATLAB and Python**. Both versions are tested against the same reference values in CI. | MATLAB · Python · uv |
+| **[Ackermann Steering Analysis](https://github.com/jaykumarpatil9099/ackermann-steering-analysis)** | Pure, parallel and anti-Ackermann geometry: slip angles, tyre forces, wheelbase sensitivity. | MATLAB · CI |
+| **[Tyre–Rim Explicit FEM](https://github.com/jaykumarpatil9099/tyre-rim-fem-ansys)** | Explicit-dynamics bump impact on a multi-material wheel assembly (hyperelastic tyre, elastic-plastic rim). | ANSYS |
 
-**[Vehicle Dynamics Models — MATLAB & Simulink](https://github.com/jaykumarpatil9099/vehicle-dynamics-models-matlab-simulink)**
-MATLAB / Simulink toolkit covering the standard VD modelling progression — quarter-car up to 14-DoF full vehicle, plus bicycle (handling), longitudinal driving + braking, and Pacejka tyre library. Used as the simulation backbone for the GT3 lap simulator.
-
-**[Ackermann Steering Geometry Analysis](https://github.com/jaykumarpatil9099/ackermann-steering-analysis)**
-Pure-MATLAB analytical study of pure / parallel / anti-Ackermann linkages. Slip angles, lateral tyre forces, wheelbase sensitivity.
-
-**[Pacejka Magic Formula — MATLAB](https://github.com/jaykumarpatil9099/pacejka-tyre-model)**
-Clean MATLAB implementation of the simplified four-parameter Pacejka tyre model — lateral, longitudinal, load-sensitive peak, friction envelope.
+Most MATLAB repos have an **Open in MATLAB Online** button, so you can run them in the browser with a free MathWorks account.
 
 ---
+
+## Now
+
+**Master's thesis** · Advanced Innovation Engineering (AIE), UK, remote · 09/2026 – 03/2027
+Series-hybrid electric powertrain with a hydrogen-fuelled rotary (Wankel) range extender: system modelling, energy-management strategy and component sizing.
 
 ## Experience
 
-**Powertrain & Electronics Head — SAE Supra Formula Student** · Delhi, India · 11/2021 – 05/2022
-Designed and validated drivetrain systems including semi-automatic paddle-shift actuation. Integrated and calibrated multiple sensors (RPM, boost, lambda, IAT) enabling real-time telemetry. Developed MATLAB scripts to process lap data and correlate vehicle response with driver feedback for setup optimisation.
+**Powertrain & Electronics Head, Redline Racing (Supra SAEINDIA Formula Student)** · Pune, India · 11/2021 – 05/2022
+Drivetrain design and validation, including semi-automatic paddle-shift actuation. Integrated and calibrated sensors (RPM, boost, lambda, IAT) for real-time telemetry. Wrote MATLAB lap-data processing to correlate vehicle response with driver feedback for setup work.
 
-**Engineering Change Intern — Mahindra & Mahindra** · Nashik, India · 11/2021 – 05/2022
-Designed and updated 3D components in CATIA V5 ensuring manufacturability and GD&T compliance. Performed FEM simulations in ANSYS to analyse load paths and fatigue-prone regions under dynamic loading. Improved structural durability by 15 % through design optimisation.
-
----
+**Engineering Change Intern, Mahindra & Mahindra** · Nashik, India · 11/2021 – 05/2022
+CATIA V5 component design with GD&T. ANSYS FEM for load paths and fatigue-prone regions, which improved structural durability by 15 %.
 
 ## Education
 
-**M.Sc. Interdisciplinary Engineering (Automotive)** · Hochschule Trier, Germany · 10/2023 – expected 10/2026
-Specialisation: Vehicle Dynamics, Powertrain Systems, Finite Element Analysis, Mechatronics
+**M.Sc. Interdisciplinary Engineering (Automotive)** · Hochschule Trier · 10/2023 – 03/2027 (expected)
+Vehicle Dynamics · Powertrain Systems · FEA · Mechatronics
 
-**B.Sc. Mechanical Engineering** · JSPM Pune, India · 07/2019 – 05/2022
-Specialisation: Dynamics of Machinery, Thermal Machines, Turbo Machines, FEA, Mechatronics
-
----
-
-## Certifications & memberships
-
-| Document | Issuer |
-|---|---|
-| [ANSYS Training Certificate](cv/certificates/ansys.pdf) | ANSYS Inc. |
-| [SAE Formula Student Certificate](cv/certificates/sae_formula_student.pdf) | SAE |
-| [SAE India Membership](cv/certificates/sae_india_membership.pdf) | SAE India |
-| [Mahindra & Mahindra Internship Certificate](cv/certificates/mahindra_internship.pdf) | Mahindra & Mahindra |
-| [University Enrolment Certificate](cv/certificates/enrolment.pdf) | Hochschule Trier |
+**B.Sc. Mechanical Engineering** · JSPM Pune · 07/2019 – 05/2022
 
 ---
 
-## Tech stack
+## Toolbox
 
-**Simulation & modelling:** MATLAB · Simulink · ANSYS Mechanical · ANSYS Fluent · OpenFOAM
+**Simulation:** MATLAB · Simulink · ANSYS Mechanical / Explicit / Fluent · OpenFOAM
+**Vehicle dynamics:** Lap-time simulation · multi-body vehicle models · Pacejka MF 5.2 · suspension kinematics · FFT / modal analysis
+**Telemetry:** Cosworth PI Toolbox · MoTeC · iRacing `.ibt` parsing
 **CAD:** CATIA V5 · SolidWorks · Siemens NX · Creo
-**Telemetry & motorsport:** Cosworth PI Toolbox · MoTeC · iRacing telemetry parsing
-**Vehicle dynamics:** Multi-body simulation · Pacejka Magic Formula · Suspension kinematics · Lap-time simulation · Frequency-domain analysis (FFT)
+**Software practice:** Git · GitHub Actions CI · MATLAB build tool + unit tests · Python (NumPy, pytest, uv, ruff)
+
+## Certificates
+
+[ANSYS training](cv/certificates/ansys.pdf) · [SAE Formula Student](cv/certificates/sae_formula_student.pdf) · [SAE India membership](cv/certificates/sae_india_membership.pdf) · [Mahindra & Mahindra internship](cv/certificates/mahindra_internship.pdf)
 
 ---
 
-## Background
-
-Sim racing is one of the hobbies I use to explore vehicle dynamics, race strategy, telemetry analysis, and car setup optimization in a practical way. It has become a strong technical learning tool alongside my engineering projects, especially in simulation, data analysis, and performance-focused vehicle development.
-
----
-
-## Looking for
-
-Internship in vehicle dynamics, simulation, or race engineering — DACH region or Luxembourg. Eligible to work in Germany on a student visa.
-
-[CV (PDF)](cv/CV.pdf) · [LinkedIn](https://www.linkedin.com/in/jaykumar-patil) · jaykumarpatil9099@gmail.com
+Off the clock I sim-race (LMU, iRacing). I treat it as a test bench for setup work, telemetry analysis and race strategy.
