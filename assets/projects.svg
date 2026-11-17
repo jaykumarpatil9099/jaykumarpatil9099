@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="How the projects connect: iRacing telemetry and the Pacejka tyre model feed the vehicle-dynamics library and the GT3 lap-time simulator; the simulator is correlated against telemetry within a ±1 % charter, re-checked by CI on every push.">
+<style>
+.t{font-family:"Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",Arial,sans-serif}
+.m{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+.box{fill:#171b21;stroke:#262c35;stroke-width:1.5}
+.hot{fill:#171b21;stroke:#ff6a1a;stroke-width:2}
+.ln{stroke:#5d6773;stroke-width:2;fill:none}
+.flow{stroke:#ff6a1a;stroke-width:2;fill:none;stroke-dasharray:6 10}
+</style>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#5d6773"/></marker></defs>
+<rect width="1200" height="300" rx="18" fill="#0f1216"/>
+<text x="40" y="44" class="m" font-size="13" letter-spacing="2" fill="#8d97a5">HOW THE PROJECTS CONNECT</text>
+
+<rect class="box" x="40" y="74" width="250" height="78" rx="12"/>
+<text x="60" y="106" class="t" font-size="19" font-weight="700" fill="#e9ecef">Pacejka tyre model</text>
+<text x="60" y="132" class="m" font-size="13" fill="#8d97a5">MATLAB + Python</text>
+
+<rect class="box" x="40" y="186" width="250" height="78" rx="12"/>
+<text x="60" y="218" class="t" font-size="19" font-weight="700" fill="#e9ecef">iRacing telemetry</text>
+<text x="60" y="244" class="m" font-size="13" fill="#8d97a5">own .ibt parser</text>
+
+<rect class="box" x="360" y="74" width="270" height="78" rx="12"/>
+<text x="380" y="106" class="t" font-size="19" font-weight="700" fill="#e9ecef">Vehicle-dynamics library</text>
+<text x="380" y="132" class="m" font-size="13" fill="#8d97a5">quarter-car → 14-DoF</text>
+
+<rect class="hot" x="700" y="74" width="250" height="78" rx="12"/>
+<text x="720" y="106" class="t" font-size="19" font-weight="700" fill="#e9ecef">GT3 lap-time simulator</text>
+<text x="720" y="132" class="m" font-size="13" fill="#ff6a1a">v01 → v07.0</text>
+
+<rect class="box" x="700" y="186" width="250" height="78" rx="12"/>
+<text x="720" y="218" class="t" font-size="19" font-weight="700" fill="#e9ecef">Correlation</text>
+<text x="720" y="244" class="m" font-size="13" fill="#8d97a5">±1 % charter · 8:11.341 ref</text>
+
+<rect class="box" x="1010" y="130" width="150" height="78" rx="12"/>
+<text x="1030" y="162" class="t" font-size="19" font-weight="700" fill="#e9ecef">CI</text>
+<text x="1030" y="188" class="m" font-size="13" fill="#8d97a5">every push</text>
+
+<path class="ln" d="M290 113H354" marker-end="url(#a)"/>
+<path class="ln" d="M290 100C320 60 660 50 700 96" marker-end="url(#a)"/>
+<path class="ln" d="M630 113H694" marker-end="url(#a)"/>
+<path class="ln" d="M290 225H694" marker-end="url(#a)"/>
+<path class="ln" d="M825 152V180" marker-end="url(#a)"/>
+<path class="ln" d="M950 225C990 225 1000 210 1040 210" marker-end="url(#a)"/>
+<path class="ln" d="M1040 130C1000 113 990 113 956 113" marker-end="url(#a)"/>
+<path class="flow" d="M950 225C990 225 1000 210 1040 210M1040 130C1000 113 990 113 956 113"><animate attributeName="stroke-dashoffset" from="32" to="0" dur="1.2s" repeatCount="indefinite"/></path>
+</svg>
