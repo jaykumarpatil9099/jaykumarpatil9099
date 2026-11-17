@@ -23,6 +23,18 @@ I build and validate vehicle simulation tools: lap-time simulators, multi-DoF ve
 | **[Ackermann Steering Analysis](https://github.com/jaykumarpatil9099/ackermann-steering-analysis)** | Pure, parallel and anti-Ackermann geometry: slip angles, tyre forces, wheelbase sensitivity. | MATLAB · CI |
 | **[Tyre–Rim Explicit FEM](https://github.com/jaykumarpatil9099/tyre-rim-fem-ansys)** | Explicit-dynamics bump impact on a multi-material wheel assembly (hyperelastic tyre, elastic-plastic rim). | ANSYS |
 
+### How the projects connect
+
+```mermaid
+flowchart LR
+  T["iRacing telemetry<br/>.ibt parser"] --> C{{"Correlation<br/>±1 % charter"}}
+  P["Pacejka tyre model<br/>MATLAB + Python"] --> V["VD model library<br/>2 → 14 DoF"]
+  P --> G["GT3 lap-time simulator<br/>v01 → v07"]
+  V --> G
+  G --> C
+  C -->|"CI on every push"| G
+```
+
 Most MATLAB repos have an **Open in MATLAB Online** button, so you can run them in the browser with a free MathWorks account.
 
 ---
